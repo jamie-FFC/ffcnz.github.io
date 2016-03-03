@@ -1,0 +1,40 @@
+#contact {
+  .control {
+    margin-top: 20px;
+  }
+  
+  h3 {
+    text-indent: 10px;
+    margin-bottom: 10px;
+    
+    &.special {
+      margin-bottom: 4px;
+    }
+  }
+  
+  i {
+    display: inline-block;
+    text-indent: 10px;
+    font-style: normal;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .button {
+    margin-top: 20px;
+    // padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: $ffc-yellow;
+    border: none;
+    color: white;
+    // font-size: 14pt;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+  }
+  
+  p.control {
+    text-align: center;
+  }
+}
+

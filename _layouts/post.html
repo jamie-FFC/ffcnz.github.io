@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<section class="hero is-large">
+    <div class="hero-content" id="video-cta">
+      <div class="container video-container">
+        <div class="video-wrapper">
+          <iframe width="560" height="315" src="{{ page.youtube }}?modestbranding=1&autohide=1&showinfo=0&controls=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="ourwork">
+  <div class="container">
+    
+    <div class="columns">
+      <div class="column"></div>
+      <div class="column is-6">
+        <h1 class="title">{{ page.title }}</h1>
+        <h3 class="subtitle">Description</h3>
+        <p>
+          {{ page.description }}
+        </p>
+        
+        <h3 class="subtitle">Credit to</h3>
+        <p>
+          {% for role in page.credits %}
+            <div class="columns">
+              <div class="column">
+                {{ role.title }}:
+              </div>
+              <div class="column">
+              {% for person in role.people %}
+                {{ person.name }}<br />
+              {% endfor %}
+              </div>
+              <div class="column"></div>
+            </div>
+          {% endfor %}
+        </p>
+      </div>
+      <div class="column"></div>
+    </div>
+  </div>
+</section>
+
+{{ content }}

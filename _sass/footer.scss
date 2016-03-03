@@ -1,0 +1,11 @@
+footer {
+  a {
+    // text-decoration: none !important;
+    border: none !important;
+    &:hover {
+      color: $ffc-black;
+      // text-decoration: underline;
+      border-bottom: 1px solid $ffc-black !important;
+    }
+  }
+}

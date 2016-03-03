@@ -1,0 +1,41 @@
+<header class="header">
+  <div class="container">
+    <!-- Left side -->
+    <div class="header-left">
+      <a class="header-item" href="/">
+        <div class="header-logo"></div>
+      </a>
+      <a class="header-item text" href="/">
+        Film for Change
+      </a>
+    </div>
+    
+    {% assign pages = site.pages | sort:"weight" | where: "menu","true" %}
+
+    <!-- Hamburger menu (on mobile) -->
+    <span class="header-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+
+    <!-- Right side -->
+    
+    
+    <div class="header-right header-menu">
+      {% for node in pages %}
+        {% if page.url == node.url %}
+        <span class="header-item active">
+        {% else %}
+        <span class="header-item">
+        {% endif %}
+        
+          <a href="{{ node.url }}">
+            {{ node.title }}
+            <div class="underline"></div>
+          </a>
+        </span>
+      {% endfor %}
+    </div>
+  </div>
+</header>
