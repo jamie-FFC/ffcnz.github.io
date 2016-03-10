@@ -24,20 +24,10 @@ layout: default
           {{ page.description }}
         </p>
         
-        <h3 class="subtitle">Credit to</h3>
+        <h3 class="subtitle">Credits</h3>
         <p>
           {% for role in page.credits %}
-            <div class="columns">
-              <div class="column">
-                {{ role.title }}:
-              </div>
-              <div class="column">
-              {% for person in role.people %}
-                {{ person.name }}<br />
-              {% endfor %}
-              </div>
-              <div class="column"></div>
-            </div>
+            {{ role.name }}<br />
           {% endfor %}
         </p>
       </div>

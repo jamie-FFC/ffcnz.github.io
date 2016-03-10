@@ -7,36 +7,38 @@ weight: 100
 
 <section class="section" id="ourwork">
   <div class="container">
-  <div class="columns">
-    
     {% for video in site.posts %}
-    <a href="{{ video.url }}">
-      <div class="column">
-        <div class="card">
-          <figure class="card-image is-4x3">
-            <img src="{{ video.title | downcase | replace: ' ', '_' | append: '.jpg' | prepend: '/assets/images/thumbs/' }}" alt="">
-          </figure>
-          
-          <div class="card-content">
-            <div class="media">
-              <div class="media-content">
-                <p class="title is-5">{{ video.title }}</p>
-                <p class="subtitle is-6">{{ video.short_description }}</p>
+      {% assign loopindex = forloop.index0 | modulo: 3 %}
+      {% if loopindex == 0 %}
+        <div class="columns">
+      {% endif %}
+
+      <a href="{{ video.url }}">
+        <div class="column">
+          <div class="card">
+            <figure class="card-image is-4x3">
+              {% if video.thumb %}
+                <img src="{{ video.thumb | prepend: '/assets/images/thumbs/' }}" alt="">
+              {% else %}
+                <img src="{{ video.title | downcase | replace: ' ', '_' | append: '.jpg' | prepend: '/assets/images/thumbs/' }}" alt="">
+              {% endif %}
+            </figure>
+            
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-5">{{ video.title }}</p>
+                  <p class="subtitle is-6">{{ video.short_description }}</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-    </div>
-    </a>
+      </a>
+
+      {% if loopindex == 2 %}
+        </div>
+      {% endif %}
     {% endfor %}
-    
-  </div>
-  
-  <h3 id="paginator" class="is-centered">
-    <a href="" class="selected">1</a>
-    <a href="">2</a>
-    <a href="">3</a>
-    <a href="">4</a>
-  </h3>
   </div>
 </section>
