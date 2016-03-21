@@ -3,8 +3,12 @@
     a {
       color: $ffc-black;
     }
+
+    .card-content {
+      min-height: 140px;
+    }
   }
-  
+
   #paginator {
     margin-top: 60px;
     a {
@@ -24,11 +28,11 @@
       }
     }
   }
-  
+
   h3.subtitle {
     margin-top: 20px !important;
   }
-  
+
   hr {
     background: red;
     margin-top: 0px !important;
