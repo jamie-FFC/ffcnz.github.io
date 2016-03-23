@@ -36,11 +36,16 @@ weight: 100
           </div>
         </a>
     </div>
+    
       
 
       {% if loopindex == 2 %}
         </div>
       {% endif %}
     {% endfor %}
+    {% if loopindex != 2 && loopindex != 0 %}
+      <div class="column"></div>
+    </div>
+    {% endif %}
   </div>
 </section>
