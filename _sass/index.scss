@@ -44,6 +44,8 @@ h1.title, h2.title, h3.title, p {
 .other-vids {
   .column {
     .card {
+      min-height: 300px;
+
       p:first-child {
         margin-bottom: 30px !important;
       }
@@ -95,7 +97,7 @@ h1.title, h2.title, h3.title, p {
   height: 80px;
   border-radius: 40px;
   // background: red;
-  line-height: 75px;
+  line-height: 70px;
   font-size: 24pt;
   font-weight: bold;
   border: 5px solid $ffc-yellow;
