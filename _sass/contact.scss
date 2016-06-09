@@ -1,4 +1,13 @@
 #contact {
+
+  input.input, textarea.textarea {
+    box-shadow: none;
+
+    &:active, &:focus {
+      border-color: $ffc-yellow;
+    }
+  }
+
   .control {
     margin-top: 20px;
   }
@@ -18,6 +27,7 @@
     font-style: normal;
     margin-top: 0;
     margin-bottom: 10px;
+    font-size: 0.8rem;
   }
   
   .button {

@@ -3,11 +3,12 @@ h1.title, h2.title, h3.title, p {
 }
 
 .homepage-section {
-  padding-top: 0px;
+  // padding-top: 20px;
+  padding-bottom: 50px;
   
 
   .container {
-    padding-bottom: 30px;
+    padding-bottom: 80px;
     border-bottom: 1px solid $ffc-grey;
   }
 
@@ -50,6 +51,7 @@ h1.title, h2.title, h3.title, p {
 .other-vids {
   .column {
     .card {
+      // margin-right: 200px;
       min-height: 300px;
 
       p:first-child {
@@ -86,4 +88,8 @@ h1.title, h2.title, h3.title, p {
   margin-right: auto;
   box-sizing: border-box;
   margin-bottom: 20px;
+}
+
+#our-mission p {
+  text-align: left;
 }
