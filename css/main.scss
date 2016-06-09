@@ -34,7 +34,7 @@ body {
   font-family: 'open_sansregular', Arial;
 }
 
-h1,h2,h3,.header-item {
+h1,h2,h3,.nav-item {
   font-family: 'aleoregular', Arial;
 }
 
@@ -48,14 +48,16 @@ p a {
   border-bottom-width: 1px;
 }
 
-.header {
+nav {
   background: $ffc-black;
+
+  height: 30px;
   
   .container {
-      .header-left {
+      .nav-left {
         overflow: visible;
         
-        .header-item {
+        .nav-item {
           color: $ffc-white;
           font-size: 13pt;
           padding-left: 0px;
@@ -65,9 +67,10 @@ p a {
             // padding-top: -2px;
             // background: red;
             margin-top: 4px;
+            
           }
           
-          .header-logo {
+          .nav-logo {
             background: url("/assets/images/logo.svg");
             background-position: center 25px;
             background-size: 75%;
@@ -83,8 +86,8 @@ p a {
         }
       }
       
-      .header-right {
-        .header-item {
+      .nav-right {
+        .nav-item {
           padding: 0;
           padding-left: 20px;
           padding-right: 20px;

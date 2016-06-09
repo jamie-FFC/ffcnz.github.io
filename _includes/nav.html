@@ -1,11 +1,11 @@
-<header class="header">
+<nav class="nav">
   <div class="container">
     <!-- Left side -->
-    <div class="header-left">
-      <a class="header-item" href="/">
-        <div class="header-logo"></div>
+    <div class="nav-left">
+      <a class="nav-item" href="/">
+        <div class="nav-logo"></div>
       </a>
-      <a class="header-item text" href="/">
+      <a class="nav-item text" href="/">
         FILM&nbsp;&nbsp;<i>for</i>&nbsp;&nbsp;CHANGE Aotearoa
       </a>
     </div>
@@ -13,7 +13,7 @@
     {% assign pages = site.pages | sort:"weight" | where: "menu","true" %}
 
     <!-- Hamburger menu (on mobile) -->
-    <span class="header-toggle">
+    <span class="nav-toggle">
       <span></span>
       <span></span>
       <span></span>
@@ -22,12 +22,12 @@
     <!-- Right side -->
     
     
-    <div class="header-right header-menu">
+    <div class="nav-right nav-menu">
       {% for node in pages %}
         {% if page.url == node.url %}
-        <span class="header-item active">
+        <span class="nav-item active">
         {% else %}
-        <span class="header-item">
+        <span class="nav-item">
         {% endif %}
         
           <a href="{{ node.url }}">
@@ -38,4 +38,4 @@
       {% endfor %}
     </div>
   </div>
-</header>
+</nav>
