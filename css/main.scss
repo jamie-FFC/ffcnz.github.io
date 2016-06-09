@@ -38,6 +38,10 @@ h1,h2,h3,.nav-item {
   font-family: 'aleoregular', Arial;
 }
 
+.container {
+  max-width: 800px;
+}
+
 .card {
   box-shadow: none !important;
   border: 0.5px solid lighten($ffc-grey, 20%);
@@ -48,7 +52,7 @@ p a {
   border-bottom-width: 1px;
 }
 
-nav {
+nav.nav {
   background: $ffc-black;
 
   height: 30px;
