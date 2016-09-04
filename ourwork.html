@@ -14,7 +14,7 @@ weight: 100
       {% endif %}
 
       
-        <div class="column">
+        <div class="column is-4">
         <a href="{{ video.url }}">
           <div class="card">
             <figure class="card-image">
@@ -43,9 +43,5 @@ weight: 100
         </div>
       {% endif %}
     {% endfor %}
-    {% if loopindex != 2 and loopindex != 0 %}
-      <div class="column"></div>
-    </div>
-    {% endif %}
   </div>
 </section>
